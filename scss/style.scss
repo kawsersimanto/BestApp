@@ -4,6 +4,7 @@
 @import "header";
 @import "banner";
 @import "feature";
+@import "about";
 @import "responsive";
 
 *{
@@ -25,3 +26,6 @@ body{
 
 @include extra-large;
 @include large;
+@include medium;
+@include mobile;
+@include mobile-small;

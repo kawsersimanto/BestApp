@@ -1,0 +1,58 @@
+@import "variables";
+@import "mixins";
+
+.about {
+  padding: 5rem 0;
+  background-image: url(../img/about-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-container{
+  @include flex(center);
+  flex-wrap: wrap;
+}
+
+.about-img {
+  flex: 1 1 30rem;
+  min-width: 40%;
+  img{
+    width: 100%;
+  }
+}
+
+.about-content {
+  flex: 1 1 30rem;
+  p{
+    margin-bottom: 2.5rem;
+  }
+}
+
+.about-title {
+  color: $light-black;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.button-container{
+  display: flex;
+  align-items: flex-start;
+}
+
+.btn {
+  display: inline-block;
+  // &:last-child{
+  //   margin-top: 1rem;
+  // }
+}
+
+.apple{
+  margin-right: 1rem;
+  // margin-top: 2rem;
+}
+
+.fa-apple,
+.fa-google-play {
+  margin-right: .5rem;
+}

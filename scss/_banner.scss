@@ -2,22 +2,23 @@
 @import "mixins";
 
 .home {
+  padding-bottom: 5rem;
   min-height: 100vh;
   background-image: url(../img/home-bg-img.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  @include flex(center);
 }
 
 .banner {
-  margin-top: 80px;
   @include flex(center);
 }
 
 // .banner-content {
 // }
 
-.title {
+.banner-title {
   font-size: 5rem;
   color: $light-black;
   text-transform: capitalize;
@@ -26,7 +27,7 @@
   }
 }
 
-.description {
+.banner-description {
   margin: 2rem 0;
   color: $light-black;
 }
