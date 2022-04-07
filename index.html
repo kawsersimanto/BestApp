@@ -1,13 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- required meta tags  -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best App</title>
+
+  <!-- fonts link  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+
+  <!-- css links  -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+  <!-- header starts -->
+
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <div class="brand-title">
+          <a href="#">Best<span>App</span></a>
+        </div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">features</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#review">review</a></li>
+            <li><a href="#pricing">pricing</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- header ends -->
+
+  <!-- main section starts  -->
+  <main class="home" id="home">
+    <div class="container">
+      <div class="banner">
+        <div class="banner-content">
+          <h1 class="title">best mobile app <span>showcase</span></h1>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam velit inventore veniam autem molestias earum sint. Perspiciatis fuga temporibus odit.</p>
+          <button class="btn">Download Now</button>
+        </div>
+        <div class="banner-img">
+          <img src="img/home-img.png" alt="bestapp">
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- main section ends  -->
+
+  <!-- feature section start -->
+
+  <section class="feature">
+    <div class="container">
+      <article class="feature-title">
+        <h1>app features</h1>
+      </article>
+      <div class="cards">
+
+        <!-- single card  -->
+        <div class="single-card">
+          <div class="card-img">
+            <img src="img/f-icon1.png" alt="bestapp">
+          </div>
+          <h2 class="card-title">amazing ui design</h2>
+          <p class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto reiciendis qui repudiandae quod officia libero? Velit dolorum ad ea alias?</p>
+          <button class="btn">read more</button>
+        </div>
+        <!-- single card  -->
+
+        <div class="single-card">
+          <div class="card-img">
+            <img src="img/f-icon2.png" alt="bestapp">
+          </div>
+          <h2 class="card-title">soft and smooth animations</h2>
+          <p class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto reiciendis qui repudiandae quod officia libero? Velit dolorum ad ea alias?</p>
+          <button class="btn">read more</button>
+        </div>
+
+        <div class="single-card">
+          <div class="card-img">
+            <img src="img/f-icon3.png" alt="bestapp">
+          </div>
+          <h2 class="card-title">amazing ui design</h2>
+          <p class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto reiciendis qui repudiandae quod officia libero? Velit dolorum ad ea alias?</p>
+          <button class="btn">read more</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- feature section end -->
+
+  <!-- js links  -->
+  <script src="js/hamburger.js"></script>
+  <script src="js/sticky-navbar.js"></script>
+
 </body>
 </html>

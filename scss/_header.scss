@@ -1,0 +1,102 @@
+@import "variables";
+@import "responsive";
+
+header{
+  position: relative;
+}
+
+.container{
+  padding: 0 10%;
+}
+
+.navbar {
+  width: 100%;
+  padding: 2.5rem 10%;
+  background-color: $white;
+  @include flex;
+  box-shadow: $box-shadow;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  transition: all 0.5s ease 0s;
+  // @include border;
+}
+
+.navbar.sticky{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.brand-title {
+  position: relative;
+  a{
+    font-size: 1.8rem;
+    color: $purple;
+    text-decoration: none;
+    span{
+      color: $pink;
+    }
+  }
+}
+
+.toggle-button{
+  width: 35px;
+  height: 30px;
+  position: absolute;
+  display: inline-block;
+  right: 5%;
+  top: 50px;
+  display: none;
+  justify-content: space-between;
+  flex-direction: column;
+  transition: all 0.5s ease 0s;
+}
+
+.toggle-button.sticky{
+  top: 25px;
+}
+
+.toggle-button.active {
+  .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .bar:nth-child(1) {
+    transform: translateY(15px) rotate(45deg);
+  }
+  .bar:nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg);
+  }
+}
+
+.bar {
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: $purple;
+}
+
+.nav-links {
+  position: relative;
+  display: flex;
+  ul{
+    @include flex;
+    li{
+      list-style: none;
+      a{
+        margin: 0 2rem;
+        font-size: 1.1rem;
+        color: $black;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: all 0.3s ease 0s;
+        &:hover{
+          color: $pink;
+        }
+      }
+      &:last-child a{
+        margin-right: 0;
+      }
+    }
+  }
+}

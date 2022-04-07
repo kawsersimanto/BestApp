@@ -1,0 +1,65 @@
+@import "variables";
+@import "mixins";
+
+.home {
+  min-height: 100vh;
+  background-image: url(../img/home-bg-img.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner {
+  margin-top: 80px;
+  @include flex(center);
+}
+
+.banner-content {
+}
+
+.title {
+  font-size: 5rem;
+  color: $light-black;
+  text-transform: capitalize;
+  span{
+    color: $pink;
+  }
+}
+
+.description {
+  margin: 2rem 0;
+  color: $light-black;
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 40px;
+  font-size: 1.2rem;
+  color: $white;
+  background-image: $gradient;
+  cursor: pointer;
+  text-transform: capitalize;
+  &:hover{
+    transform: scale(1.05);
+  }
+  &:focus{
+    outline: none;
+  }
+}
+
+.banner-img {
+  min-width: 45%;
+  img{
+    width: 100%;
+    animation: float 3s linear infinite;
+  }
+  @keyframes float {
+    0%,100%{
+      transform: translateY(0rem);
+    }
+    50%{
+      transform: translateY(2.5rem);
+    }
+  }
+}

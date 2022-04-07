@@ -1,5 +1,26 @@
+@import "variables";
+@import "mixins";
+@import "header";
+@import "banner";
+@import "feature";
+@import "responsive";
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+*::selection{
+  background-color: $pink;
+  color: $white;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background-color: $background;
+}
+
+@include extra-large;
+@include large;
