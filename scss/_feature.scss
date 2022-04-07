@@ -16,18 +16,27 @@
 .cards {
   @include flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .single-card {
   padding: 5rem 2rem;
   @include flex;
+  position: relative;
   flex-direction: column;
   flex: 1 1 20rem;
   background-color: $white;
   box-shadow: $box-shadow;
+  border: 1px solid transparent;
   border-radius: 20px;
   text-align: center;
+  transition: all 0.5s;
+  z-index: 0;
+  &:hover{
+    z-index: 1;
+    transform: scale(1.05);
+    border: 1px solid $pink;
+  }
 }
 
 .card-img {

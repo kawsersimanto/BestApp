@@ -1,0 +1,39 @@
+.pricing{
+  padding: 10rem 0;
+}
+
+.subscription-status {
+  font-size: 2.5rem;
+  color: $purple;
+}
+
+.price {
+  span{
+    font-size: 4rem;
+    color: $pink;
+  }
+  font-size: 1.4rem;
+  color: $pink;
+}
+
+.plan-info {
+  margin: 2rem 0;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  li{
+    margin: .5rem 0;
+    list-style: none;
+  }
+}
+
+.fas.fa-check {
+  color: green;
+}
+
+.fas.fa-times {
+  color: red;
+}
+
+.btn {
+}
