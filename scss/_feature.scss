@@ -1,0 +1,48 @@
+@import "variables";
+@import "mixins";
+
+.feature {
+  padding: 5rem;
+}
+
+.feature-title {
+  margin-bottom: 2.5rem;
+  font-size: 2.5rem;
+  color: $purple;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cards {
+  @include flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.single-card {
+  padding: 5rem 2rem;
+  @include flex;
+  flex-direction: column;
+  flex: 1 1 20rem;
+  background-color: $white;
+  box-shadow: $box-shadow;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.card-img {
+  // min-width: 40%;
+  img{
+    width: 100%;
+  }
+}
+
+.card-title {
+  margin-top: 1rem;
+  text-transform: capitalize;
+}
+
+.card-content {
+  margin: 2.5rem 0;
+}
+
