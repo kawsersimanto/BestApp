@@ -1,0 +1,58 @@
+@import "variables";
+@import "mixins";
+
+.contact {
+  padding-bottom: 5rem;
+}
+
+.contact-content{
+  @include flex(center);
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact-img {
+  flex: 1 1 25rem;
+  padding-bottom: 5rem;
+  img{
+    width: 100%;
+  }
+}
+
+.contact-form {
+  padding: 2rem 3rem;
+  background-color: $white;
+  border-radius: 10px;
+  border: 1px solid $box-shadow;
+  box-shadow: $box-shadow;
+  flex: 1 1 25rem;
+  text-align: left;
+}
+
+.contact-title {
+  color: $pink;
+}
+
+.input-box {
+
+  input, textarea{
+    margin-bottom: 1rem;
+    padding: 1rem 0 1rem 1rem;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    font-size: 1rem;
+    &:focus{
+      outline: none;
+    }
+    &::placeholder{
+      color: #c4c4c4;
+    }
+  }
+
+  textarea{
+    font-family: inherit;
+  }
+
+}
