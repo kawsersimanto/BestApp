@@ -9,6 +9,7 @@
 @import "reviews";
 @import "pricing";
 @import "contact";
+@import "footer";
 @import "responsive";
 
 *{
@@ -26,6 +27,18 @@ body{
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   background-color: $background;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 @include extra-large;
